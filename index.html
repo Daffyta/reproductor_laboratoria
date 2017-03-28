@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Reproductor</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <audio id ="audio">
+      <source src="assets/undertaker.mp3" type="audio/mpeg">
+    </audio>
+    <h1>Reproductor</h1>
+    <section>
+      <input id="rango" type="range" min="0" max="100" step="1" value="0"/>
+      <br>
+      <br>
+      <button id="boton" onclick="play()">Play</button>
+      <button id="boton" onclick="pause()">Pause</button>
+      <button id="boton" onclick="stop()">Stop</button>
+      <button id="boton" onclick="volumenMas()">Volumen +</button>
+      <button id="boton" onclick="volumenMenos()">Volumen -</button>
+      <button id="boton" onclick="adelantar()"> Adelantar</button>
+      <button id="boton" onclick="atrasar()"> Atrasar</button>
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>
