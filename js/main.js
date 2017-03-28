@@ -1,19 +1,22 @@
 var reproducir = document.getElementById("audio");
 
 function play() {
-    reproducir.play();
+  reproducir.play();
 }
 
 function pause() {
-    reproducir.pause();
+  reproducir.pause();
 }
 
 function stop() {
-        reproducir.load();
+  reproducir.load();
+
+//reproducir.currentTime = 0;
+//reproducir.pause();
 }
 
 function volumenMenos() {
-    reproducir.volume -= 0.2;
+    reproducir.volume -= 0.2;  
 }
 
 function volumenMas() {
